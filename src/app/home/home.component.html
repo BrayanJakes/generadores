@@ -1,0 +1,222 @@
+
+
+<div *ngIf="tag === 1" class="animated fadeIn">
+    <img src="./assets/img/ws.png" style="position: absolute;
+right: 100px;
+bottom: -80px;
+z-index: 1;
+">
+    <div style="position: relative;">
+        <img src="./assets/img/fondoHome.png" style="width: 100%;  opacity: 0.3;">
+    <img style="    position: absolute;
+    left: 10%;
+    top: 35%;" src="./assets/img/textoImgHome.png" >
+    </div>
+    
+    <div class="row mt-5" style="padding-right: 10rem;
+    padding-left: 10rem;">
+    
+        <div class="col-6 text-center">
+            <div class="dsadsa" style="cursor: pointer;"
+            (click)="enviarTag(2)"
+            (mouseenter)="img1 = true"
+            (mouseleave)="img1 = false">
+                <img src="./assets/img/generador.png" style=" width: 15rem;" >
+                <p *ngIf="img1" class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
+                    Plantas Eléctricas (Generadores)
+                </p>
+            </div>
+                
+        </div>
+        <div class="col-6 text-center">
+            <div class="dsadsa" style="cursor: pointer;"
+            (click)="enviarTag(3)"
+            (mouseenter)="img2 = true"
+            (mouseleave)="img2 = false"
+            >
+                <img src="./assets/img/panel.png" style=" width: 17.5rem;"  >
+                <p *ngIf="img2" class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
+                    Páneles solares
+                </p>
+            </div>
+                
+        </div>
+        <div class="col-6 text-center mt-5">
+            <div class="dsadsa" style="cursor: pointer;"
+            (click)="enviarTag(4)"
+            (mouseenter)="img3 = true"
+            (mouseleave)="img3 = false"
+            >
+                <img src="./assets/img/baterias.png" style="     width: 12rem;
+                height: 12rem;" >
+                <p *ngIf="img3" class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
+                    Baterías
+                </p>
+            </div>
+                
+        </div>
+        <div class="col-6 text-center mt-5">
+            <div class="dsadsa" style="cursor: pointer;"
+            (click)="enviarTag(5)"
+            (mouseenter)="img4 = true"
+            (mouseleave)="img4 = false">
+                <img src="./assets/img/ups.png" style="    width: 12rem;
+                height: 12rem" >
+                <p *ngIf="img4" class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
+                    Inversores
+                </p>
+            </div>
+                
+        </div>
+
+        <p class="mt-4 text-white" style="padding-right: 6rem; font-size: clamp(1rem, 7vw, 1.5rem);
+        padding-left: 6rem;">
+            Viveco ofrece los servicios profesionales para el proyecto, suministros, instalación y mantenimiento de los sistemas de energía alternativos a la red eléctrica, como son las plantas eléctricas, los páneles solares y el conjunto operactivo de almacenamiento de energía en baterías para su posterior conversión a corriente eléctrica equivalente a la red.
+        </p>
+    
+    </div>
+    
+    
+    
+</div>
+
+<div *ngIf="tag === 2" class="animated fadeIn">
+
+    <img src="./assets/img/ws.png" style="position: absolute;
+right: 100px;
+bottom: 350px;
+z-index: 1;
+">
+
+    <p  class="mt-5 text-white" style="font-size: 2vw; font-weight: 700; margin-left: 17rem;
+    margin-right: 17rem;">
+        Plantas Eléctricas 
+    </p>
+    
+    <div class="dsadsa" 
+    style="margin-left: 17rem;
+    margin-right: 17rem;
+    text-align: center;">
+                <img src="./assets/img/generador.png"  >
+                <p  class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem);     margin-left: 6rem;
+                margin-right: 6rem;
+                text-align: left;">
+                   <span style="font-weight: 700;">
+                    Plantas Eléctricas o Generadores,
+                   </span>  comprenden el motor de combustión interna, mayormente diesel, acoplado a un generador de corriente alterna, monofásico o trifásico
+                   <br>
+                   <br>
+                   Se suministran con cajas metálicas de insonorización y la transferencia automática para ser activados al momento de faltar la energía eléctrica de la red
+                </p>
+            </div>
+
+
+           
+</div>
+
+<div *ngIf="tag === 3" class="animated fadeIn">
+
+    <img src="./assets/img/ws.png" style="position: absolute;
+right: 100px;
+bottom: 350px;
+z-index: 1;
+">
+
+    <p  class="mt-5 text-white" style="font-size: 2vw; font-weight: 700; margin-left: 17rem;
+    margin-right: 17rem;">
+        Páneles Solares
+    </p>
+    
+    <div class="dsadsa" 
+    style="margin-left: 17rem;
+    margin-right: 17rem;
+    text-align: center;">
+                <img src="./assets/img/panel.png"  >
+                <p  class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem);     margin-left: 6rem;
+                margin-right: 6rem;
+                text-align: left;">
+                   El desarrollo de la tecnología fotovoltaica ha permitido que la aplicación de páneles solares ha sido creciendo en forma exponencial
+                    <br>
+                    <br>
+                   En el caso que se tengan dificultades para el suministro eléctrico la energía solar es la solución a largo plazo. No requiere mantenimiento, no se deteriora, no hace ruido, no contamina.
+                   <br>
+                   <br>
+                   Esta aplicación requiere de los otros elementos de esta oferta como son las baterías para almacenar la energía y los UPS para convertirla en corriente alterna para suplir a todos las necesidades de hogar, oficina o industria
+                </p>
+            </div>
+
+            <div style="margin-left: 10rem;
+            margin-top: 2rem;
+            margin-right: 10rem;
+            text-align: center;">
+                <img src="./assets/img/panel2.png" style="width: 100%;" >
+            </div>
+</div>
+
+<div *ngIf="tag === 4" class="animated fadeIn">
+
+    <img src="./assets/img/ws.png" style="position: absolute;
+right: 100px;
+bottom: 350px;
+z-index: 1;
+">
+
+    <p  class="mt-5 text-white" style="font-size: 2vw; font-weight: 700; margin-left: 17rem;
+    margin-right: 17rem;">
+        Baterías
+    </p>
+    
+    <div class="dsadsa" 
+    style="margin-left: 17rem;
+    margin-right: 17rem;
+    text-align: center;">
+                <img src="./assets/img/baterias.png"  >
+                <p  class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem);     margin-left: 6rem;
+                margin-right: 6rem;
+                text-align: left;">
+                   Las alternativas de energía requieren almacenarla para su uso en el momento de ser requeria, el almacén son las baterías
+                        <br>
+                        <br>
+                   La tecnología va avanzando rápidamente sobre este tema, cada dia se disponen de nuevos sistema de baterías, mayor capacidad, más sofisticadas.
+                        <br>
+                        <br>
+                   En el caso de los UPS se utilizan mayormente las de ciclo profundo, de plomo acido o de gel
+                </p>
+            </div>
+
+            <div style="margin-left: 10rem;
+            margin-top: 2rem;
+            margin-right: 10rem;
+            text-align: center;">
+                <img src="./assets/img/bateria2.png"  >
+            </div>
+</div>
+
+<div *ngIf="tag === 5" class="animated fadeIn">
+
+    <img src="./assets/img/ws.png" style="position: absolute;
+right: 100px;
+bottom: 350px;
+z-index: 1;
+">
+
+    <p  class="mt-5 text-white" style="font-size: 2vw; font-weight: 700; margin-left: 17rem;
+    margin-right: 17rem;">
+        Inversores 
+    </p>
+    
+    <div class="dsadsa" 
+    style="margin-left: 17rem;
+    margin-right: 17rem;
+    text-align: center;">
+                <img src="./assets/img/ups.png"  >
+                <p  class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem);     margin-left: 6rem;
+                margin-right: 6rem;
+                text-align: left;">
+                   UPS, estos equipos electrónicos permiten convertir la energía almacenada en baterías a corriente alterna para el consumo, y cuando la red se activa realizan la carga de las baterías
+                    <br>
+                    <br>
+                   Están en capacidad de soministrar el servicio en 110VAC o 220VAC, con onda sinusoidal completa para operar motores. A su vez disponen del regulador para la conexión de los páneles solares.
+                </p>
+            </div>
+</div>

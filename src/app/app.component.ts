@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'generadores';
+
+  tag = 1;
+
+  taged(e: any){
+    this.tag = e;
+  }
 }
