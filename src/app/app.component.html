@@ -1,8 +1,9 @@
-<div class="container">
+<div class="container-fluid">
   <img src="./assets/img/logo.png" 
 style=" 
 position: absolute;
-top: 40px;" 
+" 
+[style.top]="homeService.responsiveStatus === 4 ? '15px' : '40px'"
 alt="Vibeco">
 
 <div >
@@ -12,29 +13,39 @@ style="
     border-bottom: 1px solid white;
     font-size: clamp(1rem, 2vw, 1.2rem);
     padding-bottom: 0.5rem;">
-  <li [ngbNavItem]="1" >
-    <a ngbNavLink class="text-white">Inicio</a>
-    <ng-template ngbNavContent> <app-home [tag]="1" (tag2)="taged($event)"></app-home> </ng-template>
-  </li>
-  <li [ngbNavItem]="2" >
-    <a ngbNavLink class="text-white" >Generadores</a>
-    <ng-template ngbNavContent><app-home [tag]="2" (tag2)="taged($event)"></app-home></ng-template>
-  </li>
+    <li [ngbNavItem]="1" *ngIf="homeService.responsiveStatus !== 4">
+      <a ngbNavLink class="text-white">Inicio</a>
+      <ng-template ngbNavContent> <app-home [tag]="1" (tag2)="taged($event)"></app-home> </ng-template>
+    </li>
+    <li [ngbNavItem]="2" *ngIf="homeService.responsiveStatus !== 4">
+      <a ngbNavLink class="text-white" >Generadores</a>
+      <ng-template ngbNavContent><app-home [tag]="2" (tag2)="taged($event)"></app-home></ng-template>
+    </li>
+  
+    <li [ngbNavItem]="3" *ngIf="homeService.responsiveStatus !== 4">
+      <a ngbNavLink class="text-white ">Páneles solares</a>
+      <ng-template ngbNavContent><app-home [tag]="3" (tag2)="taged($event)"></app-home></ng-template>
+    </li>
+  
+    <li [ngbNavItem]="4" *ngIf="homeService.responsiveStatus !== 4">
+      <a ngbNavLink class="text-white">Baterías</a>
+      <ng-template ngbNavContent><app-home [tag]="4" (tag2)="taged($event)"></app-home></ng-template>
+    </li>
+  
+    <li [ngbNavItem]="5" *ngIf="homeService.responsiveStatus !== 4"> 
+      <a ngbNavLink class="text-white">Inversores</a>
+      <ng-template ngbNavContent><app-home [tag]="5" (tag2)="taged($event)"></app-home></ng-template>
+    </li>
 
-  <li [ngbNavItem]="3" >
-    <a ngbNavLink class="text-white ">Páneles solares</a>
-    <ng-template ngbNavContent><app-home [tag]="3" (tag2)="taged($event)"></app-home></ng-template>
-  </li>
+    
 
-  <li [ngbNavItem]="4" >
-    <a ngbNavLink class="text-white">Baterías</a>
-    <ng-template ngbNavContent><app-home [tag]="4" (tag2)="taged($event)"></app-home></ng-template>
-  </li>
-
-  <li [ngbNavItem]="5" > 
-    <a ngbNavLink class="text-white">Inversores</a>
-    <ng-template ngbNavContent><app-home [tag]="5" (tag2)="taged($event)"></app-home></ng-template>
-  </li>
+    <li mat-button *ngIf="homeService.responsiveStatus === 4" [matMenuTriggerFor]="menu">
+      <mat-icon class="text-white" >more_vert</mat-icon>
+      </li>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
 </ul>
 </div>
 

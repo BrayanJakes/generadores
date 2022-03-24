@@ -21,7 +21,7 @@ z-index: 1;
             (click)="enviarTag(2)"
             (mouseenter)="img1 = true"
             (mouseleave)="img1 = false">
-                <img src="./assets/img/generador.png" style=" width: 15rem;" >
+                <img src="./assets/img/generador.png" [style.width]="img1 ? '9rem' : '15rem'" >
                 <p *ngIf="img1" class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
                     Plantas Eléctricas (Generadores)
                 </p>
@@ -34,7 +34,7 @@ z-index: 1;
             (mouseenter)="img2 = true"
             (mouseleave)="img2 = false"
             >
-                <img src="./assets/img/panel.png" style=" width: 17.5rem;"  >
+                <img src="./assets/img/panel.png"  [style.width]="img2 ? '11.5rem' : '17.5rem'" >
                 <p *ngIf="img2" class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
                     Páneles solares
                 </p>
@@ -47,8 +47,7 @@ z-index: 1;
             (mouseenter)="img3 = true"
             (mouseleave)="img3 = false"
             >
-                <img src="./assets/img/baterias.png" style="     width: 12rem;
-                height: 12rem;" >
+                <img src="./assets/img/baterias.png" [style.width]="img3 ? '6rem' : '12rem'" [style.height]="img3 ? '8rem' : '12rem'" >
                 <p *ngIf="img3" class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
                     Baterías
                 </p>
@@ -60,8 +59,7 @@ z-index: 1;
             (click)="enviarTag(5)"
             (mouseenter)="img4 = true"
             (mouseleave)="img4 = false">
-                <img src="./assets/img/ups.png" style="    width: 12rem;
-                height: 12rem" >
+                <img src="./assets/img/ups.png" [style.width]="img4 ? '6rem' : '12rem'" [style.height]="img4 ? '8rem' : '12rem'" >
                 <p *ngIf="img4" class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
                     Inversores
                 </p>
