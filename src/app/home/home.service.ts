@@ -10,7 +10,10 @@ export class HomeService {
 
   constructor(private breakpointObserver: BreakpointObserver) {
 
+    console.log('pipe')
+
     setTimeout(() => {
+      console.log('pipe')
       this.responsive()
     }, 100);
    }
@@ -22,8 +25,10 @@ export class HomeService {
         Breakpoints.Medium,
         Breakpoints.XLarge,
         Breakpoints.Small,
+        Breakpoints.XSmall,
       ])
       .subscribe((result) => {
+        console.log(result)
         if (result.breakpoints[Breakpoints.Medium]) {
           this.responsiveStatus = 1;
           console.log("medium");
@@ -37,8 +42,12 @@ export class HomeService {
           this.responsiveStatus = 3;
         }
         if (result.breakpoints[Breakpoints.Small]) {
-          console.log("muy peque;o");
+          console.log("peque;o");
           this.responsiveStatus = 4;
+        }
+        if (result.breakpoints[Breakpoints.XSmall]) {
+          console.log("muy peque;o");
+          this.responsiveStatus = 5;
         }
       });
   }

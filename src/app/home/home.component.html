@@ -1,65 +1,76 @@
 
 
 <div *ngIf="tag === 1" class="animated fadeIn">
-    <img src="./assets/img/ws.png" style="position: absolute;
-right: 100px;
-bottom: -80px;
-z-index: 1;
-">
+    <img src="./assets/img/ws.png" 
+    [class.sacmiev]="homeService.responsiveStatus !== 5"
+    [class.dsaofa]="homeService.responsiveStatus === 5"
+    >
     <div style="position: relative;">
         <img src="./assets/img/fondoHome.png" style="width: 100%;  opacity: 0.3;">
     <img style="    position: absolute;
     left: 10%;
-    top: 35%;" src="./assets/img/textoImgHome.png" >
+    top: 35%;" 
+    [style.width]="homeService.responsiveStatus === 5 ? '60%' : 'auto'"
+    src="./assets/img/textoImgHome.png" >
     </div>
     
-    <div class="row mt-5" style="padding-right: 10rem;
-    padding-left: 10rem;">
+    <div class="row mt-5" [class.dsafa]="homeService.responsiveStatus !== 5" >
     
-        <div class="col-6 text-center">
+        <div class=" text-center" [class.col-6]="homeService.responsiveStatus !== 5" [class.col-12]="homeService.responsiveStatus === 5">
             <div class="dsadsa" style="cursor: pointer;"
             (click)="enviarTag(2)"
             (mouseenter)="img1 = true"
             (mouseleave)="img1 = false">
-                <img src="./assets/img/generador.png" [style.width]="img1 ? '9rem' : '15rem'" >
+                <img src="./assets/img/generador.png" [style.width]="img1 ? '9rem' : '15rem'" 
+                [class.img1]="homeService.responsiveStatus === 5"
+                
+                >
                 <p *ngIf="img1" class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
                     Plantas Eléctricas (Generadores)
                 </p>
             </div>
                 
         </div>
-        <div class="col-6 text-center">
+        <div class=" text-center " [class.mt-5]="homeService.responsiveStatus === 5"
+        
+        [class.col-6]="homeService.responsiveStatus !== 5" [class.col-12]="homeService.responsiveStatus === 5">
             <div class="dsadsa" style="cursor: pointer;"
             (click)="enviarTag(3)"
             (mouseenter)="img2 = true"
             (mouseleave)="img2 = false"
             >
-                <img src="./assets/img/panel.png"  [style.width]="img2 ? '11.5rem' : '17.5rem'" >
+                <img src="./assets/img/panel.png"  [style.width]="img2 ? '11.5rem' : '17.5rem'"
+                [class.img2]="homeService.responsiveStatus === 5"
+                >
                 <p *ngIf="img2" class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
                     Páneles solares
                 </p>
             </div>
                 
         </div>
-        <div class="col-6 text-center mt-5">
+        <div class=" text-center mt-5" [class.col-6]="homeService.responsiveStatus !== 5" [class.col-12]="homeService.responsiveStatus === 5">
             <div class="dsadsa" style="cursor: pointer;"
             (click)="enviarTag(4)"
             (mouseenter)="img3 = true"
             (mouseleave)="img3 = false"
             >
-                <img src="./assets/img/baterias.png" [style.width]="img3 ? '6rem' : '12rem'" [style.height]="img3 ? '8rem' : '12rem'" >
+                <img src="./assets/img/baterias.png" [style.width]="img3 ? '6rem' : '12rem'" [style.height]="img3 ? '8rem' : '12rem'"
+                [class.img3]="homeService.responsiveStatus === 5"
+                >
                 <p *ngIf="img3" class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
                     Baterías
                 </p>
             </div>
                 
         </div>
-        <div class="col-6 text-center mt-5">
+        <div class=" text-center mt-5" [class.col-6]="homeService.responsiveStatus !== 5" [class.col-12]="homeService.responsiveStatus === 5">
             <div class="dsadsa" style="cursor: pointer;"
             (click)="enviarTag(5)"
             (mouseenter)="img4 = true"
             (mouseleave)="img4 = false">
-                <img src="./assets/img/ups.png" [style.width]="img4 ? '6rem' : '12rem'" [style.height]="img4 ? '8rem' : '12rem'" >
+                <img src="./assets/img/ups.png" [style.width]="img4 ? '6rem' : '12rem'" [style.height]="img4 ? '8rem' : '12rem'" 
+                [class.img3]="homeService.responsiveStatus === 5"
+                >
                 <p *ngIf="img4" class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
                     Inversores
                 </p>
@@ -67,8 +78,7 @@ z-index: 1;
                 
         </div>
 
-        <p class="mt-4 text-white" style="padding-right: 6rem; font-size: clamp(1rem, 7vw, 1.5rem);
-        padding-left: 6rem;">
+        <p class="mt-4 text-white" [class.dasfjep]="homeService.responsiveStatus !== 5" [class.dasncioe]="homeService.responsiveStatus === 5">
             Viveco ofrece los servicios profesionales para el proyecto, suministros, instalación y mantenimiento de los sistemas de energía alternativos a la red eléctrica, como son las plantas eléctricas, los páneles solares y el conjunto operactivo de almacenamiento de energía en baterías para su posterior conversión a corriente eléctrica equivalente a la red.
         </p>
     
@@ -80,24 +90,24 @@ z-index: 1;
 
 <div *ngIf="tag === 2" class="animated fadeIn">
 
-    <img src="./assets/img/ws.png" style="position: absolute;
-right: 100px;
-bottom: 350px;
-z-index: 1;
-">
+    <img src="./assets/img/ws.png" 
+    [class.cdncai]="homeService.responsiveStatus !== 5"
+    [class.dasocem]="homeService.responsiveStatus === 5"
+    >
 
-    <p  class="mt-5 text-white" style="font-size: 2vw; font-weight: 700; margin-left: 17rem;
-    margin-right: 17rem;">
+    <p  class="mt-5 text-white" style=" font-weight: 700;" 
+    [class.dsacnde]="homeService.responsiveStatus !== 5"
+    [class.daomfope]="homeService.responsiveStatus !== 5">
         Plantas Eléctricas 
     </p>
     
-    <div class="dsadsa" 
-    style="margin-left: 17rem;
-    margin-right: 17rem;
+    <div class="dsadsa" [class.daiomepoc]="homeService.responsiveStatus === 5" [class.daomfope]="homeService.responsiveStatus !== 5"
+    style="
     text-align: center;">
-                <img src="./assets/img/generador.png"  >
-                <p  class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem);     margin-left: 6rem;
-                margin-right: 6rem;
+                <img src="./assets/img/generador.png" [style.width]="homeService.responsiveStatus === 5 ? '10rem' : 'auto'" >
+                <p  class="mt-4 text-white" 
+                [class.dasofjeo]="homeService.responsiveStatus !== 5"
+                style="
                 text-align: left;">
                    <span style="font-weight: 700;">
                     Plantas Eléctricas o Generadores,
@@ -114,24 +124,24 @@ z-index: 1;
 
 <div *ngIf="tag === 3" class="animated fadeIn">
 
-    <img src="./assets/img/ws.png" style="position: absolute;
-right: 100px;
-bottom: 350px;
-z-index: 1;
-">
+    <img src="./assets/img/ws.png" 
+    [class.cdncai]="homeService.responsiveStatus !== 5"
+    [class.dasocem]="homeService.responsiveStatus === 5"
+    >
 
-    <p  class="mt-5 text-white" style="font-size: 2vw; font-weight: 700; margin-left: 17rem;
-    margin-right: 17rem;">
+    <p  class="mt-5 text-white" style="font-weight: 700;" 
+    [class.dsacnde]="homeService.responsiveStatus !== 5"
+    [class.daomfope]="homeService.responsiveStatus !== 5">
         Páneles Solares
     </p>
-    
-    <div class="dsadsa" 
-    style="margin-left: 17rem;
-    margin-right: 17rem;
+     
+    <div class="dsadsa" [class.daiomepoc]="homeService.responsiveStatus === 5" [class.daomfope]="homeService.responsiveStatus !== 5"
+    style="
     text-align: center;">
-                <img src="./assets/img/panel.png"  >
-                <p  class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem);     margin-left: 6rem;
-                margin-right: 6rem;
+                <img src="./assets/img/panel.png" [style.width]="homeService.responsiveStatus === 5 ? '10rem' : 'auto'" >
+                <p  class="mt-4 text-white"
+                [class.dasofjeo]="homeService.responsiveStatus !== 5"
+                style="
                 text-align: left;">
                    El desarrollo de la tecnología fotovoltaica ha permitido que la aplicación de páneles solares ha sido creciendo en forma exponencial
                     <br>
@@ -143,34 +153,33 @@ z-index: 1;
                 </p>
             </div>
 
-            <div style="margin-left: 10rem;
+            <div style="
             margin-top: 2rem;
-            margin-right: 10rem;
-            text-align: center;">
+            
+            text-align: center;"  [class.daomcoe]="homeService.responsiveStatus !== 5">
                 <img src="./assets/img/panel2.png" style="width: 100%;" >
             </div>
 </div>
 
 <div *ngIf="tag === 4" class="animated fadeIn">
 
-    <img src="./assets/img/ws.png" style="position: absolute;
-right: 100px;
-bottom: 350px;
-z-index: 1;
-">
+    <img src="./assets/img/ws.png" 
+    [class.cdncai]="homeService.responsiveStatus !== 5"
+    [class.dasocem]="homeService.responsiveStatus === 5"
+    >
 
-    <p  class="mt-5 text-white" style="font-size: 2vw; font-weight: 700; margin-left: 17rem;
-    margin-right: 17rem;">
+    <p  class="mt-5 text-white" style="font-weight: 700;"  [class.dsacnde]="homeService.responsiveStatus !== 5" 
+    [class.daomfope]="homeService.responsiveStatus !== 5">
         Baterías
     </p>
     
-    <div class="dsadsa" 
-    style="margin-left: 17rem;
-    margin-right: 17rem;
+    <div class="dsadsa" [class.daiomepoc]="homeService.responsiveStatus === 5" [class.daomfope]="homeService.responsiveStatus !== 5"
+    style="
     text-align: center;">
-                <img src="./assets/img/baterias.png"  >
-                <p  class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem);     margin-left: 6rem;
-                margin-right: 6rem;
+                <img src="./assets/img/baterias.png" [style.width]="homeService.responsiveStatus === 5 ? '10rem' : 'auto'" >
+                <p  class="mt-4 text-white" 
+                [class.dasofjeo]="homeService.responsiveStatus !== 5"
+                style="
                 text-align: left;">
                    Las alternativas de energía requieren almacenarla para su uso en el momento de ser requeria, el almacén son las baterías
                         <br>
@@ -182,34 +191,31 @@ z-index: 1;
                 </p>
             </div>
 
-            <div style="margin-left: 10rem;
+            <div style="
             margin-top: 2rem;
-            margin-right: 10rem;
-            text-align: center;">
-                <img src="./assets/img/bateria2.png"  >
+            text-align: center;" [class.daomcoe]="homeService.responsiveStatus !== 5">
+                <img src="./assets/img/bateria2.png" [style.width]="homeService.responsiveStatus === 5 ? '10rem' : 'auto'" >
             </div>
 </div>
 
 <div *ngIf="tag === 5" class="animated fadeIn">
 
-    <img src="./assets/img/ws.png" style="position: absolute;
-right: 100px;
-bottom: 350px;
-z-index: 1;
-">
+    <img src="./assets/img/ws.png" 
+    [class.cdncai]="homeService.responsiveStatus !== 5"
+    [class.dasocem]="homeService.responsiveStatus === 5"
+    >
 
-    <p  class="mt-5 text-white" style="font-size: 2vw; font-weight: 700; margin-left: 17rem;
-    margin-right: 17rem;">
+    <p  class="mt-5 text-white" style=" font-weight: 700;" [class.daomfope]="homeService.responsiveStatus !== 5" [class.dsacnde]="homeService.responsiveStatus !== 5" >
         Inversores 
     </p>
     
-    <div class="dsadsa" 
-    style="margin-left: 17rem;
-    margin-right: 17rem;
+    <div class="dsadsa" [class.daiomepoc]="homeService.responsiveStatus === 5" [class.daomfope]="homeService.responsiveStatus !== 5" 
+    style="
     text-align: center;">
-                <img src="./assets/img/ups.png"  >
-                <p  class="mt-4 text-white" style="font-size: clamp(1rem, 7vw, 1.2rem);     margin-left: 6rem;
-                margin-right: 6rem;
+                <img src="./assets/img/ups.png" [style.width]="homeService.responsiveStatus === 5 ? '10rem' : 'auto'" >
+                <p  class="mt-4 text-white"
+                [class.dasofjeo]="homeService.responsiveStatus !== 5"
+                style="
                 text-align: left;">
                    UPS, estos equipos electrónicos permiten convertir la energía almacenada en baterías a corriente alterna para el consumo, y cuando la red se activa realizan la carga de las baterías
                     <br>

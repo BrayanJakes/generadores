@@ -17,12 +17,16 @@ export class HomeComponent implements OnInit {
   img3 = false;
   img4 = false;
 
-  constructor(private homeService: HomeService) { }
+  constructor(public homeService: HomeService) { }
 
   ngOnInit(): void {
   }
 
   enviarTag(tag: number){
+    this.img1 = false;
+    this.img2 = false;
+    this.img3 = false;
+    this.img4 = false;
     this.tag = tag;
     this.tag2.emit(tag)
   }
