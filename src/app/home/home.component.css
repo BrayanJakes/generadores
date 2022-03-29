@@ -31,8 +31,8 @@
 
 .sacmiev{
     position: absolute;
-right: 100px;
-bottom: -80px;
+right: 0px;
+bottom: 0px;
 z-index: 1;
 }
 
@@ -44,9 +44,9 @@ z-index: 1;
 .dsaofa{
     position: absolute;
     right: 0px;
-    bottom: 400px;
+    bottom: 0px;
     z-index: 1;
-    width: 5rem;
+    width: 4rem;
 }
 
 
@@ -69,16 +69,16 @@ z-index: 1;
 
 .dasocem{
     position: absolute;
-    right: 10px;
-    bottom: 400px;
+    right: 0px;
+    top: 100px;
     z-index: 1;
-    width: 5rem;
+    width: 4rem;
 }
 
 .cdncai{
     position: absolute;
-    right: 100px;
-    bottom: 350px;
+    right: 0px;
+    top: 100px;
     z-index: 1;
 
 }

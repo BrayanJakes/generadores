@@ -1,11 +1,12 @@
 
 
 <div *ngIf="tag === 1" class="animated fadeIn">
-    <img src="./assets/img/ws.png" 
+    
+    <div style="position: relative;">
+        <img src="./assets/img/ws.png" 
     [class.sacmiev]="homeService.responsiveStatus !== 5"
     [class.dsaofa]="homeService.responsiveStatus === 5"
     >
-    <div style="position: relative;">
         <img src="./assets/img/fondoHome.png" style="width: 100%;  opacity: 0.3;">
     <img style="    position: absolute;
     left: 10%;
@@ -88,7 +89,7 @@
     
 </div>
 
-<div *ngIf="tag === 2" class="animated fadeIn">
+<div *ngIf="tag === 2" class="animated fadeIn" style="position: relative;">
 
     <img src="./assets/img/ws.png" 
     [class.cdncai]="homeService.responsiveStatus !== 5"
@@ -122,7 +123,7 @@
            
 </div>
 
-<div *ngIf="tag === 3" class="animated fadeIn">
+<div *ngIf="tag === 3" class="animated fadeIn" style="position: relative;">
 
     <img src="./assets/img/ws.png" 
     [class.cdncai]="homeService.responsiveStatus !== 5"
@@ -161,7 +162,7 @@
             </div>
 </div>
 
-<div *ngIf="tag === 4" class="animated fadeIn">
+<div *ngIf="tag === 4" class="animated fadeIn" style="position: relative;">
 
     <img src="./assets/img/ws.png" 
     [class.cdncai]="homeService.responsiveStatus !== 5"
@@ -198,7 +199,7 @@
             </div>
 </div>
 
-<div *ngIf="tag === 5" class="animated fadeIn">
+<div *ngIf="tag === 5" class="animated fadeIn" style="position: relative;">
 
     <img src="./assets/img/ws.png" 
     [class.cdncai]="homeService.responsiveStatus !== 5"
