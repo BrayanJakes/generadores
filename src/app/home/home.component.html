@@ -20,12 +20,18 @@
         <div class=" text-center" [class.col-6]="homeService.responsiveStatus !== 5" [class.col-12]="homeService.responsiveStatus === 5">
             <div class="dsadsa" style="cursor: pointer; height: 15rem;"
             (click)="enviarTag(2)"
+            (mouseenter)="img1 = true"
+            (mouseleave)="img1 = false"
             >
-                <img loading="lazy" src="./assets/img/generador.png" [style.width]="img1 ? '9rem' : '100%'" 
+                <img loading="lazy" src="./assets/img/generador.png" 
+                style="width: 180px; height: 140px;"
                 [class.img1]="homeService.responsiveStatus === 5"
                 
                 >
-                <p  class="mt-4 " style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
+                <p *ngIf="img1 && homeService.responsiveStatus !== 5" class="mt-4 " style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
+                    Plantas Eléctricas (Generadores)
+                </p>
+                <p *ngIf="homeService.responsiveStatus === 5" class="mt-4 " style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
                     Plantas Eléctricas (Generadores)
                 </p>
             </div>
@@ -36,11 +42,16 @@
         [class.col-6]="homeService.responsiveStatus !== 5" [class.col-12]="homeService.responsiveStatus === 5">
             <div class="dsadsa" style="cursor: pointer; height: 15rem;"
             (click)="enviarTag(3)"
+            (mouseenter)="img2 = true"
+            (mouseleave)="img2 = false"
             >
-                <img loading="lazy" src="./assets/img/panel.png"  [style.width]="img2 ? '11.5rem' : '100%'"
+                <img loading="lazy" src="./assets/img/panel.png"  style="width: 180px; height: 140px;"
                 [class.img2]="homeService.responsiveStatus === 5"
                 >
-                <p  class="mt-4 " style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
+                <p *ngIf="img2 && homeService.responsiveStatus !== 5" class="mt-4 " style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
+                    Páneles solares
+                </p>
+                <p *ngIf="homeService.responsiveStatus === 5" class="mt-4 " style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
                     Páneles solares
                 </p>
             </div>
@@ -49,11 +60,16 @@
         <div class=" text-center mt-5" [class.col-6]="homeService.responsiveStatus !== 5" [class.col-12]="homeService.responsiveStatus === 5">
             <div class="dsadsa" style="cursor: pointer; height: 15rem;"
             (click)="enviarTag(4)"
+            (mouseenter)="img3 = true"
+            (mouseleave)="img3 = false"
             >
-                <img loading="lazy" src="./assets/img/baterias.png" [style.width]="img3 ? '6rem' : '12rem'" [style.height]="img3 ? '8rem' : '12rem'"
+                <img loading="lazy" src="./assets/img/baterias.png" style="width: 150px; height: 140px;"
                 [class.img3]="homeService.responsiveStatus === 5"
                 >
-                <p  class="mt-4 " style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
+                <p *ngIf="img3 && homeService.responsiveStatus !== 5" class="mt-4 " style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
+                    Baterías
+                </p>
+                <p *ngIf="homeService.responsiveStatus === 5" class="mt-4 " style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
                     Baterías
                 </p>
             </div>
@@ -61,11 +77,17 @@
         </div>
         <div class=" text-center mt-5" [class.col-6]="homeService.responsiveStatus !== 5" [class.col-12]="homeService.responsiveStatus === 5">
             <div class="dsadsa" style="cursor: pointer; height: 15rem;"
-            (click)="enviarTag(5)">
-                <img loading="lazy" src="./assets/img/ups.png" [style.width]="img4 ? '6rem' : '12rem'" [style.height]="img4 ? '8rem' : '12rem'" 
+            (click)="enviarTag(5)"
+            (mouseenter)="img4 = true"
+            (mouseleave)="img4 = false"
+            >
+                <img loading="lazy" src="./assets/img/ups.png"  style="width: 150px; height: 140px;"
                 [class.img3]="homeService.responsiveStatus === 5"
                 >
-                <p  class="mt-4 " style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
+                <p *ngIf="img4 && homeService.responsiveStatus !== 5" class="mt-4 " style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
+                    Inversores
+                </p>
+                <p *ngIf="homeService.responsiveStatus === 5" class="mt-4 " style="font-size: clamp(1rem, 7vw, 1.2rem); font-weight: 700;">
                     Inversores
                 </p>
             </div>
