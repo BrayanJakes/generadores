@@ -12,10 +12,10 @@ export class HomeComponent implements OnInit {
   @Output() tag2: EventEmitter<Number> = new EventEmitter()
   
 
-  img1 = false;
-  img2 = false;
-  img3 = false;
-  img4 = false;
+  img1 = true;
+  img2 = true;
+  img3 = true;
+  img4 = true;
 
   constructor(public homeService: HomeService) { }
 
