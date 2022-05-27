@@ -1,11 +1,16 @@
 .active{
     color: #e4a315!important;
-    background-color: #3b4358!important;
+    background-color: #f1f2f7!important;
     border: none;
 }
 
 ::ng-deep .mat-menu-panel {
     background-color: #3b4358;
+  }
+
+  .cspa{
+    color: #3b4358;
+    font-weight: 600;
   }
 
 

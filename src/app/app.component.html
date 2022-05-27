@@ -16,59 +16,59 @@ style="
     font-size: clamp(1rem, 2vw, 1.2rem);
     padding-bottom: 0.5rem;">
     <li [ngbNavItem]="1" *ngIf="homeService.responsiveStatus !== 5">
-      <a ngbNavLink class="text-white">Inicio</a>
+      <a ngbNavLink class="cspa">Inicio</a>
       <ng-template ngbNavContent> <app-home [tag]="1" (tag2)="taged($event)"></app-home> </ng-template>
     </li>
     <li [ngbNavItem]="2" *ngIf="homeService.responsiveStatus !== 5">
-      <a ngbNavLink class="text-white" >Generadores</a>
+      <a ngbNavLink class="cspa" >Generadores</a>
       <ng-template ngbNavContent><app-home [tag]="2" (tag2)="taged($event)"></app-home></ng-template>
     </li>
   
     <li [ngbNavItem]="3" *ngIf="homeService.responsiveStatus !== 5">
-      <a ngbNavLink class="text-white">Páneles solares</a>
+      <a ngbNavLink class="cspa">Páneles solares</a>
       <ng-template ngbNavContent><app-home [tag]="3" (tag2)="taged($event)"></app-home></ng-template>
     </li>
   
     <li [ngbNavItem]="4" *ngIf="homeService.responsiveStatus !== 5">
-      <a ngbNavLink class="text-white">Baterías</a>
+      <a ngbNavLink class="cspa">Baterías</a>
       <ng-template ngbNavContent><app-home [tag]="4" (tag2)="taged($event)"></app-home></ng-template>
     </li>
   
     <li [ngbNavItem]="5" *ngIf="homeService.responsiveStatus !== 5"> 
-      <a ngbNavLink class="text-white">Inversores</a>
+      <a ngbNavLink class="cspa">Inversores</a>
       <ng-template ngbNavContent><app-home [tag]="5" (tag2)="taged($event)"></app-home></ng-template>
     </li>
 
     
 
     <li mat-button *ngIf="homeService.responsiveStatus === 5" [matMenuTriggerFor]="menu">
-      <mat-icon class="text-white" >more_vert</mat-icon>
+      <mat-icon class="cspa" >more_vert</mat-icon>
       </li>
     <mat-menu #menu="matMenu" style="background-color: black;">
       <div [ngbNavItem]="1" (click)="ver(1)">
-        <a ngbNavLink class="text-white">Inicio</a>
+        <a ngbNavLink class="cspa">Inicio</a>
       </div>
       <div [ngbNavItem]="2" (click)="ver(2)">
-        <a ngbNavLink class="text-white" >Generadores</a>
+        <a ngbNavLink class="cspa" >Generadores</a>
       </div>
     
       <div [ngbNavItem]="3" (click)="ver(3)">
-        <a ngbNavLink class="text-white">Páneles solares</a>
+        <a ngbNavLink class="cspa">Páneles solares</a>
       </div>
     
       <div [ngbNavItem]="4" (click)="ver(4)">
-        <a ngbNavLink class="text-white">Baterías</a>
+        <a ngbNavLink class="cspa">Baterías</a>
       </div>
     
       <div [ngbNavItem]="5" (click)="ver(5)"> 
-        <a ngbNavLink class="text-white">Inversores</a>
+        <a ngbNavLink class="cspa">Inversores</a>
       </div>
     </mat-menu>
 </ul>
 </div>
 
 
-
+<hr style="opacity: inherit;">
 
 
 
