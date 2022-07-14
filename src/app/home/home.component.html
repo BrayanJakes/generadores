@@ -109,42 +109,37 @@
     <img loading="lazy" src="./assets/img/portadaPlanta.png" style="width: 100%; ">
 
    <div class="container">
-    <p class="mt-2 "  
-    [class.mt-5]="homeService.responsiveStatus !== 5"
-    [class.dsacnde]="homeService.responsiveStatus !== 5"
-    [class.daomfope]="homeService.responsiveStatus !== 5">
-        Plantas Eléctricas 
-    </p>
+    
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     
     <div  [class.daiomepoc]="homeService.responsiveStatus === 5" [class.daomfope]="homeService.responsiveStatus !== 5"
     style="
     text-align: center;">
-                <img loading="lazy" src="./assets/img/generador.png" [style.width]="homeService.responsiveStatus === 5 ? '10rem' : 'auto'" >
+    <!-- <p class="mt-2 "  
+    [class.mt-5]="homeService.responsiveStatus !== 5"
+    [class.dsacnde]="homeService.responsiveStatus !== 5"
+    [class.daomfope]="homeService.responsiveStatus !== 5">
+        Plantas Eléctricas 
+    </p> -->
                 <p  class="mt-4 pb-4" 
                 [class.dasofjeo]="homeService.responsiveStatus !== 5"
                 style="
                 text-align: left;">
+                <span style="display: block; font-weight: 600;" class="mb-5 mt-5 dsacnde"
+                >Plantas Eléctricas </span>
                     Plantas Eléctricas o Generadores, comprenden el motor de combustión interna, mayormente diesel, acoplado a un generador de corriente alterna, monofásico o trifásico.
                    <br>
                    <br>
                    Se suministran con cajas metálicas de insonorización y la transferencia automática para ser activados al momento de faltar la energía eléctrica de la red.
                 </p>
 
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+            </div>
+
+            
+             <div class="mb-5 mt-5" style="
+            
+            text-align: center;" >
+                <img loading="lazy" src="./assets/img/generador.png" [style.width]="homeService.responsiveStatus === 5 ? '10rem' : 'auto'" >
             </div>
 
    </div>
@@ -158,27 +153,22 @@
 
     <div class="container">
         
-    <p class="mt-2" 
+    <!-- <p class="mt-2" 
     [class.mt-5]="homeService.responsiveStatus !== 5"
     [class.dsacnde]="homeService.responsiveStatus !== 5"
     [class.daomfope]="homeService.responsiveStatus !== 5">
         Paneles Solares
-    </p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    </p> -->
     <div  [class.daiomepoc]="homeService.responsiveStatus === 5" [class.daomfope]="homeService.responsiveStatus !== 5"
     style="
     text-align: center;">
-                <img loading="lazy" src="./assets/img/panel.png" [style.width]="homeService.responsiveStatus === 5 ? '10rem' : 'auto'" >
-                <p  class="mt-5 "
+                
+                <p  class="mt-4 pb-4"
                 [class.dasofjeo]="homeService.responsiveStatus !== 5"
                 style="
                 text-align: left;">
+                <span style="display: block; font-weight: 600;" class="mb-5 mt-5 dsacnde"
+                >Paneles Solares </span>
                     El desarrollo de la tecnología fotovoltaica ha permitido que la aplicación de paneles solares ha ido creciendo en forma exponencial.
                     <br>
                     <br>
@@ -188,13 +178,12 @@
                    Esta aplicación requiere de los otros elementos de esta oferta como son las baterías para almacenar la energía y los UPS para convertirla en corriente alterna para suplir a todas las necesidades de hogar oficina o industria.
                 </p>
 
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+            </div>
+
+            <div class="mb-5 mt-5" style="
+            
+            text-align: center;" >
+                <img loading="lazy" src="./assets/img/panel2.png" [style.width]="homeService.responsiveStatus === 5 ? '100%' : '100%'" >
             </div>
 
             <!-- <div style="
@@ -211,27 +200,22 @@
     <img loading="lazy" src="./assets/img/portadaBateria.png" style="width: 100%; ">
 
     <div class="container">
-        <p   class="mt-2"
+        <!-- <p   class="mt-2"
          [class.mt-5]="homeService.responsiveStatus !== 5"
          [class.dsacnde]="homeService.responsiveStatus !== 5" 
     [class.daomfope]="homeService.responsiveStatus !== 5">
         Baterías
-    </p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    </p> -->
     <div  [class.daiomepoc]="homeService.responsiveStatus === 5" [class.daomfope]="homeService.responsiveStatus !== 5"
     style="
     text-align: center;">
-                <img loading="lazy" src="./assets/img/baterias.png" [style.width]="homeService.responsiveStatus === 5 ? '10rem' : 'auto'" >
-                <p  class="mt-4 " 
+                
+                <p  class="mt-4 pb-4" 
                 [class.dasofjeo]="homeService.responsiveStatus !== 5"
                 style="
                 text-align: left;">
+                <span style="display: block; font-weight: 600;" class="mb-5 mt-5 dsacnde"
+                >Baterías </span>
                    Las alternativas de energía requieren almacenarla para su uso en el momento de ser requerida, el almacén son las baterías.
                         <br>
                         <br>
@@ -244,18 +228,12 @@
                    
             </div>
 
-            <div style="
-            margin-top: 2rem;
+            <div class="mb-5 mt-5" style="
             text-align: center;" [class.daomcoe]="homeService.responsiveStatus !== 5">
-                <img loading="lazy" src="./assets/img/bateria2.png" class=" pb-4" [style.width]="homeService.responsiveStatus === 5 ? '10rem' : 'auto'" >
+                <img loading="lazy" src="./assets/img/bateria2.png" [style.width]="homeService.responsiveStatus === 5 ? '8rem' : '200px'" > &nbsp;&nbsp;&nbsp;
+                <img loading="lazy" src="./assets/img/baterias.png" [style.width]="homeService.responsiveStatus === 5 ? '8rem' : '200px'" >
             </div>
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
     </div>
 </div>
 
@@ -264,38 +242,31 @@
     <img loading="lazy" src="./assets/img/portadaUPS.png" style="width: 100%; ">
 
     <div class="container">
-        <p  class="mt-2" 
+        <!-- <p  class="mt-2" 
         [class.mt-5]="homeService.responsiveStatus !== 5"
         [class.daomfope]="homeService.responsiveStatus !== 5" [class.dsacnde]="homeService.responsiveStatus !== 5" >
             Inversores 
-        </p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        </p> -->
         <div  [class.daiomepoc]="homeService.responsiveStatus === 5" [class.daomfope]="homeService.responsiveStatus !== 5" 
         style="
         text-align: center;">
-                    <img loading="lazy" src="./assets/img/ups.png" [style.width]="homeService.responsiveStatus === 5 ? '10rem' : 'auto'" >
                     <p  class="mt-4  pb-4"
                     [class.dasofjeo]="homeService.responsiveStatus !== 5"
                     style="
                     text-align: left;">
+                    <span style="display: block; font-weight: 600;" class="mb-5 mt-5 dsacnde"
+                    >Inversores </span>
                        Estos equipos electrónicos permiten convertir la energía almacenada en baterías a corriente alterna para el consumo, y cuando la red se activa realizan la carga de las baterías.
                         <br>
                         <br>
                         Están en capacidad de suministrar el servicio en 110 VAC o 220 VAC, con onda sinusoidal completa para operar motores. A su vez disponen del regulador para la conexión de los paneles solares.
                     </p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
                 </div>
+
+                <div class="mb-5 mt-5" style="
+            
+            text-align: center;" >
+                <img loading="lazy" src="./assets/img/ups2.png" [style.width]="homeService.responsiveStatus === 5 ? '15rem' : 'auto'" >
+            </div>
     </div>
 </div>
